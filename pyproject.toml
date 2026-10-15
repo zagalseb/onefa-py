@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onefa-py"
+version = "0.1.0"
+description = "Cargadores de datos de la ONEFA (Liga Mayor) para Python"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=1.5",
+    "pyarrow>=10",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
